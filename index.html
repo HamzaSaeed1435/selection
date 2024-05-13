@@ -15,27 +15,27 @@
     }
     header {
         background-color: #003B6F;
-        padding: 20px 20px;
+        padding: 20px;
         color: white;
         position: relative;
     }
     .header-icon {
         position: absolute;
         top: 10px;
-        width: 40px;
-        height: 40px;
-        border-radius: 15px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.5);
     }
     .left-icon {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
     }
     .left-icon img {
-        width: 50px; /* Adjust size as needed */
-        height: 50px; /* Adjust size as needed */
-        border-radius: 50%; /* Make it circular */
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
     }
     .hero {
         background-color: #007BFF;
@@ -51,14 +51,14 @@
     .download-btn {
         background-color: #22B573;
         color: white;
-        padding: 15px 30px;
+        padding: 15px 60px;
         border-radius: 30px;
         font-size: 18px;
         margin: 20px 0;
         display: inline-block;
         border: none;
         cursor: pointer;
-        text-decoration: none; /* Added */
+        text-decoration: none;
     }
     .features {
         background-color: #F2F2F2;
@@ -80,11 +80,20 @@
         font-size: 12px;
     }
 
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     /* Media Query for Mobile */
     @media only screen and (max-width: 600px) {
+        .left-icon {
+            top: 10px; /* Adjust position */
+            left: 10px; /* Adjust position */
+        }
         .left-icon img {
-            width: 40px; /* Adjust size for mobile */
-            height: 40px; /* Adjust size for mobile */
+            width: 60px; /* Adjust size for mobile */
+            height: 60px; /* Adjust size for mobile */
         }
     }
 </style>
@@ -93,7 +102,7 @@
 
 <header>
     <div class="left-icon"><img src="logo.jpeg" alt="Logo"></div> <!-- Added logo here -->
-    <h2>Bahrain Government Jobs</h2>
+    <h1 style="margin-left: 40px;margin-top: 50px;">Bahrain Government Jobs</h1> <!-- Added margin -->
 </header>
 
 <div class="hero">
