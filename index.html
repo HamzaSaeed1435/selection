@@ -15,23 +15,27 @@
     }
     header {
         background-color: #003B6F;
-        padding: 10px;
+        padding: 20px 20px;
         color: white;
         position: relative;
     }
     .header-icon {
         position: absolute;
         top: 10px;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.5);
     }
     .left-icon {
+        position: absolute;
+        top: 10px;
         left: 10px;
     }
-    .right-icon {
-        right: 10px;
+    .left-icon img {
+        width: 50px; /* Adjust size as needed */
+        height: 50px; /* Adjust size as needed */
+        border-radius: 50%; /* Make it circular */
     }
     .hero {
         background-color: #007BFF;
@@ -54,6 +58,7 @@
         display: inline-block;
         border: none;
         cursor: pointer;
+        text-decoration: none; /* Added */
     }
     .features {
         background-color: #F2F2F2;
@@ -74,14 +79,21 @@
         padding: 10px;
         font-size: 12px;
     }
+
+    /* Media Query for Mobile */
+    @media only screen and (max-width: 600px) {
+        .left-icon img {
+            width: 40px; /* Adjust size for mobile */
+            height: 40px; /* Adjust size for mobile */
+        }
+    }
 </style>
 </head>
 <body>
 
 <header>
-    <div class="header-icon left-icon"></div>
-    <h1>Bahrain Government Jobs</h1>
-    <div class="header-icon right-icon"></div>
+    <div class="left-icon"><img src="logo.jpeg" alt="Logo"></div> <!-- Added logo here -->
+    <h2>Bahrain Government Jobs</h2>
 </header>
 
 <div class="hero">
@@ -89,7 +101,9 @@
     <h2>Discover and apply for government Bahrain jobs</h2>
 </div>
 
-<a class="download-btn">Download now</a>
+<p>Explore exciting career opportunities in Bahrain's public sector with our official Government Jobs App. Get instant access to job listings, updates, and notifications right on your mobile device. Join us in contributing to the growth and development of Bahrain!</p>
+
+<a href="#" class="download-btn">Download</a> <!-- Changed text in the download button -->
 
 <div class="features">
     <div class="feature"><img src="./WhatsApp Image 2024-05-07 at 10.40.39 AM (1).jpeg" alt="Icon"><p>COC</p></div>
